@@ -11,7 +11,7 @@ export default class UserData extends Component {
     componentDidMount() {
         let ApiObject = new API(this.props.region);
 
-        console.log(ApiObject.getSummonerByName(this.props.name))
+        console.log(ApiObject.getSummonerByName(this.props.name));
     }
     render() {
         return (
@@ -20,7 +20,7 @@ export default class UserData extends Component {
                     <div className="uk-card-header">
                         <div className="uk-grid-small uk-flex-middle" data-uk-grid>
                             <div>
-                                <img className="uk-border-circle" width="100" height="100" src="http://ddragon.leagueoflegends.com/cdn/11.4.1/img/profileicon/588.png"/>
+                                <img className="uk-border-circle" width="100" height="100" src="http://ddragon.leagueoflegends.com/cdn/11.4.1/img/profileicon/588.png" alt=''/>
                             </div>
                             <div className="uk-width-expand">
                                 <h2 className="uk-card-title uk-margin-remove-bottom">KoreanoNiu</h2>

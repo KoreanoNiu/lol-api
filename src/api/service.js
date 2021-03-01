@@ -10,8 +10,8 @@ class API {
         let URL = this.baseUrl +  'lol/summoner/v4/summoners/by-name/' + summonerName
 
         const response = axios.get(URL, {
-            headers: {
-                'X-Riot-Token': "RGAPI-a7d44656-dc0b-4d23-9c0f-5d7dc0cf05de"
+            params: {
+                'api_key': "RGAPI-a7d44656-dc0b-4d23-9c0f-5d7dc0cf05de"
             }
         });
 
