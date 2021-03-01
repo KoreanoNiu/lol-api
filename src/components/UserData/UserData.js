@@ -103,7 +103,7 @@ export default class UserData extends Component {
                                             <p className="uk-margin-remove-bottom uk-margin-remove-top">Victorias: {ranked.wins}</p>
                                             <p className="uk-margin-remove-bottom uk-margin-remove-top">Derrotas: {ranked.losses}</p>
                                             <p className="uk-margin-remove-top">PL: {ranked.leaguePoints}</p>
-                                            <span className="uk-badge uk-padding-small">{ ranked.hotStreak ? 'En racha de victorias' : 'Sin racha de victorias'}</span>
+                                            <span className="uk-badge uk-padding-small uk-margin-bottom">{ ranked.hotStreak ? 'En racha de victorias' : 'Sin racha de victorias'}</span>
                                         </div>
                                     )
                                 })
