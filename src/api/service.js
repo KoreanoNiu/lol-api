@@ -14,9 +14,9 @@ class API {
                     params: {
                         "api_key": "RGAPI-a7d44656-dc0b-4d23-9c0f-5d7dc0cf05de"
                     }
-                });
+                }).then(res => {return res.data})
 
-                return response.data
+                return JSON.stringify(response)
             }catch{
 
             }
