@@ -15,7 +15,7 @@ class API {
             }
         });
 
-        return response;
+        return response.data;
 
     };
 }
