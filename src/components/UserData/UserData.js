@@ -8,7 +8,7 @@ export default class UserData extends Component {
 
         }
     }
-    componentWillMount() {
+    componentDidMount() {
         let ApiObject = new API(this.props.region);
 
         console.log(ApiObject.getSummonerByName(this.props.name))
