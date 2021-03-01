@@ -39,7 +39,7 @@ export default class Search extends Component {
                     <UserData name={name} region={region}></UserData> 
                     : 
                     <form className="uk-grid-small" data-uk-grid onSubmit={this.handleSubmit}>
-                        <div className="uk-width-1-2@s uk-search uk-search-large">
+                        <div className="uk-width-1-2@s uk-search uk-search-default uk-margin-top">
                             <button data-uk-search-icon></button>
                             <input className="uk-search-input" type="search" placeholder="Nombre de Invocador" value={name} onChange={this.handleChange} name='name'/>
                         </div>

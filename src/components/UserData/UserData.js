@@ -5,15 +5,23 @@ export default class UserData extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            loading: false,
+            data: []
         }
     }
     componentDidMount() {
         let ApiObject = new API(this.props.region);
 
-        console.log(ApiObject.getSummonerByName(this.props.name));
+        this.setState({
+            data: ApiObject.getSummonerByName(this.props.name)
+        });
+
+        this.setState({
+            loading: true
+        });
     }
     render() {
+        const { data } = this.state;
         return (
             <div className="uk-flex uk-flex-center uk-animation" data-tabindex="0">
                 <div className="uk-card uk-card-default uk-width-1-2@m uk-margin-medium-top uk-box-shadow-small uk-animation-slide-top-small">
@@ -29,6 +37,7 @@ export default class UserData extends Component {
                             <div className="uk-card-body">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             </div>
+                            {console.log(data)}
                         </div>
                     </div>
                 </div>
