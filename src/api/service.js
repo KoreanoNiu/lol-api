@@ -11,9 +11,16 @@ class API {
         const getData = async() => {
             try {
                 const response = await axios.get(URL, {
+                    headers: {
+                        'Access-Control-Allow-Origin' : '*',
+                        'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+                        "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
+                        "X-Riot-Token": "RGAPI-a7d44656-dc0b-4d23-9c0f-5d7dc0cf05de"
+                    },
+                    mode: 'no-cors',
                     params: {
                         "api_key": "RGAPI-a7d44656-dc0b-4d23-9c0f-5d7dc0cf05de"
-                    }
+                    },
                 });
 
                 return response
@@ -30,6 +37,13 @@ class API {
         const getData = async() => {
             try {
                 const response = await axios.get(URL, {
+                    headers: {
+                        'Access-Control-Allow-Origin' : '*',
+                        'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+                        "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
+                        "X-Riot-Token": "RGAPI-a7d44656-dc0b-4d23-9c0f-5d7dc0cf05de"
+                    },
+                    mode: 'no-cors',
                     params: {
                         "api_key": "RGAPI-a7d44656-dc0b-4d23-9c0f-5d7dc0cf05de"
                     }
